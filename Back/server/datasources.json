@@ -1,6 +1,12 @@
 {
-  "db": {
-    "name": "db",
-    "connector": "memory"
+  "PractBD": {
+    "host": "",
+    "port": 3306,
+    "url": "",
+    "database": "PracticaBD",
+    "password": "",
+    "name": "PractBD",
+    "user": "root",
+    "connector": "mysql"
   }
 }
