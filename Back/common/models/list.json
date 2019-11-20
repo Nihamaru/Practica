@@ -1,7 +1,7 @@
 {
-  "name": "user",
-  "plural": "users",
-  "base": "User",
+  "name": "List",
+  "plural": "Lists",
+  "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
@@ -11,8 +11,11 @@
       "type": "string",
       "required": true
     },
-    "lastname": {
-      "type": "string",
+    "description": {
+      "type": "string"
+    },
+    "createdDate": {
+      "type": "date",
       "required": true
     }
   },

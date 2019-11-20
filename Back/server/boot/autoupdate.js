@@ -7,7 +7,10 @@ var models = [
   'AccessToken',
   'ACL',
   'RoleMapping',
-  'Role'
+  'Role',
+  'List',
+  'Director',
+  'Movie'
   ];
 
 var database = app.dataSources.PractBD;

@@ -39,5 +39,17 @@
   "user": {
     "dataSource": "PractBD",
     "public": true
+  },
+  "List": {
+    "dataSource": "PractBD",
+    "public": true
+  },
+  "Director": {
+    "dataSource": "PractBD",
+    "public": true
+  },
+  "Movie": {
+    "dataSource": "PractBD",
+    "public": true
   }
 }
