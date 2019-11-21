@@ -1,7 +1,7 @@
 {
-  "name": "Movie",
-  "plural": "Movies",
-  "base": "PersistedModel",
+  "name": "Cinephile",
+  "plural": "Cinephiles",
+  "base": "User",
   "idInjection": true,
   "options": {
     "validateUpsert": true
@@ -11,45 +11,20 @@
       "type": "string",
       "required": true
     },
-    "description": {
+    "lastname": {
       "type": "string",
       "required": true
-    },
-    "relaseDate": {
-      "type": "date",
-      "required": true
-    },
-    "photo": {
-      "type": "string",
-      "required": false
     }
   },
   "validations": [],
   "relations": {
-    "directors": {
-      "type": "belongsTo",
-      "model": "Director",
-      "foreignKey": "directorId",
-      "options": {
-        "nestRemoting": true
-      }
-    },
-    "director": {
-      "type": "belongsTo",
-      "model": "Director",
-      "foreignKey": "",
-      "options": {
-        "nestRemoting": true
-      }
-    },
     "lists": {
       "type": "hasMany",
       "model": "List",
       "foreignKey": "",
       "options": {
         "nestRemoting": true
-      },
-      "through": "ListOfMovies"
+      }
     }
   },
   "acls": [
@@ -62,7 +37,7 @@
     {
       "accessType": "READ",
       "principalType": "ROLE",
-      "principalId": "$everyone",
+      "principalId": "$authenticated",
       "permission": "ALLOW"
     }
   ],

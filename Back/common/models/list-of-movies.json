@@ -1,42 +1,28 @@
 {
-  "name": "List",
-  "plural": "Lists",
+  "name": "ListOfMovies",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
-  "properties": {
-    "name": {
-      "type": "string",
-      "required": true
-    },
-    "description": {
-      "type": "string"
-    },
-    "createdDate": {
-      "type": "date",
-      "required": true
-    }
-  },
+  "properties": {},
   "validations": [],
   "relations": {
-    "cinephile": {
+    "list": {
       "type": "belongsTo",
-      "model": "Cinephile",
+      "model": "List",
       "foreignKey": "",
       "options": {
         "nestRemoting": true
       }
     },
-    "movies": {
-      "type": "hasMany",
+    "movie": {
+      "type": "belongsTo",
       "model": "Movie",
       "foreignKey": "",
       "options": {
         "nestRemoting": true
-      },
-      "through": "ListOfMovies"
+      }
     }
   },
   "acls": [

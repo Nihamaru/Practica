@@ -36,7 +36,7 @@
     "dataSource": "PractBD",
     "public": false
   },
-  "user": {
+  "Cinephile": {
     "dataSource": "PractBD",
     "public": true
   },
@@ -49,6 +49,10 @@
     "public": true
   },
   "Movie": {
+    "dataSource": "PractBD",
+    "public": true
+  },
+  "ListOfMovies": {
     "dataSource": "PractBD",
     "public": true
   }
