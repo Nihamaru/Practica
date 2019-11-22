@@ -38,8 +38,20 @@
   },
   "Cinephile": {
     "dataSource": "PractBD",
-    "public": true
-  },
+    "public": true,
+    "acls":[{
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW",
+      "property": "greet"
+    },
+    {
+      "principalType": "ROLE",
+      "principalId": "admin",
+      "permission": "ALLOW",
+      "property": "hola"
+    }]
+  },  
   "List": {
     "dataSource": "PractBD",
     "public": true
